@@ -3,7 +3,7 @@
 
 /**
  * print_number - Prints an integer.
- * @n: The integer to print.
+ * @n: The integer to prints.
  * Return: Nothing!
  */
 
@@ -15,7 +15,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-	n += -1;
+	n *= -1;
 	k = n;
 	_putchar('-');
 	}
