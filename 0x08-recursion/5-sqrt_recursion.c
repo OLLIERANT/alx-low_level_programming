@@ -17,7 +17,7 @@ int helper(int a, int b)
 
 	else if (b * b == a)
 		return (b);
-	
+
 	else
 		return (helper(a, b + 1));
 
