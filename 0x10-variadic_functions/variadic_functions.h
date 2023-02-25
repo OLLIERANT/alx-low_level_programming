@@ -2,14 +2,13 @@
 #define _VARIADIC_FUNCTIONS_H_
 #include <stdarg.h>
 #include <stdio.h>
-/*
+/**
  * struct check - paramenters to check against
  * @c: type
- * @f: the function to send it to
+ * @f: the function to send it to.
  */
 typedef struct check
 {
-	char *chk;
 	void (*f)(va_list list);
 } check_t;
 
