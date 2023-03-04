@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 
 size_t looped_listint_count(listint_t *head);
