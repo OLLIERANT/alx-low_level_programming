@@ -62,7 +62,7 @@ size_t looped_listint_count(listint_t *head)
  */
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *temp;
+	listint_t *tmp;
 	size_t nodes, index;
 
 	nodes = looped_listint_count(*h);
@@ -71,18 +71,18 @@ size_t free_listint_safe(listint_t **h)
 	{
 		for (; h != NULL && *h != NULL; nodes++)
 		{
-			temp = (*h)->next;
+			tmp = (*h)->next;
 			free(*h);
-			*h = temp;
+			*h = tmp;
 		}
 	}
 	else
 	{
 		for (index = 0; index < nodes; index++)
 		{
-			temp = (*h)->next;
+			tmp = (*h)->next;
 			free(*h);
-			*h = temp;
+			*h = tmp;
 		}
 		*h = NULL;
 	}
