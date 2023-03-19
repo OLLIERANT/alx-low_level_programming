@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * add_dnodeint - Adds a new node at the beginning of a dlistint_t list.
